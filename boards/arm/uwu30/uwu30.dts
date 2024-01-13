@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 The ZMK Contributors
+ * Copyright (c) 2023 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
  */
@@ -16,10 +16,10 @@
 		zephyr,code-partition = &code_partition;
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
+		zephyr,console = &cdc_acm_uart;
 		zmk,battery = &fuelgauge;
 		zmk,kscan = &kscan0;
-		zmk,matrix_transform = &default_transform;
-		/* zephyr,console = &cdc_acm_uart; */
+		zmk,matrix-transform = &default_transform;
 	};
 
 	default_transform: keymap_transform_0 {
@@ -37,7 +37,6 @@
  
 	kscan0: kscan {
 		compatible = "zmk,kscan-gpio-matrix";
-		label = "KSCAN";
 		diode-direction = "col2row";
 		row-gpios
 			= <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
@@ -70,10 +69,9 @@
 
 &usbd {
 	status = "okay";
-	/*		cdc_acm_uart: cdc_acm_uart {
-		compatible = "zephyr,cdc_acm_uart";
-		label = "CDC_ACM_0";
-	}; */
+	cdc_acm_uart: cdc_acm_uart {
+		compatible = "zephyr,cdc-acm-uart";
+	};
 };
 
 &pinctrl {
@@ -102,7 +100,6 @@
 
 	fuelgauge: max17048@36 {
 		compatible = "maxim,max17048";
-		label = "BATTERY";
 		reg = <0x36>;
 	};
 };
@@ -118,11 +115,9 @@
 		#size-cells = <1>;
 
 		sd_partition: partition@0 {
-			label = "softdevice";
 			reg = <0x00000000 0x00026000>;
 		};
 		code_partition: partition@26000 {
-			label = "code_partition";
 			reg = <0x00026000 0x000c6000>;
 		};
 
@@ -136,12 +131,10 @@
 		 * if enabled.
 		 */
 		storage_partition: partition@ec000 {
-			label = "storage";
 			reg = <0x000ec000 0x00008000>;
 		};
 
 		boot_partition: partition@f4000 {
-			label = "adafruit_boot";
 			reg = <0x000f4000 0x0000c000>;
 		};
 	};

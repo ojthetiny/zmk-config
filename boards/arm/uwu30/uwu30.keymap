@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022 The ZMK Contributors
+ * Copyright (c) 2023 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
  */
@@ -63,7 +63,7 @@
 			>;
 		};
 
-		F_layer {
+		f_layer {
 			bindings = <
 	&trans			&trans			&trans			&trans			&trans			&trans			&trans			&trans			&trans			&trans		
 	&trans		    &trans		    &trans		    &trans	        &trans			&trans		    &trans	        &trans		    &trans		    &trans	
