@@ -1,6 +1,6 @@
 file_format: "1"
 id: nameless_ergo
-name: Nameless Ergo
+name: nameless_ergo
 type: board
 arch: arm
 outputs:

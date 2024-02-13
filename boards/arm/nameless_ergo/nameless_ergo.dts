@@ -20,8 +20,8 @@
 *};
 
 / {
-    model = "Nameless_Ergo";
-    compatible = "Nameless_Ergo";
+    model = "nameless_ergo";
+    compatible = "nameless_ergo";
 
     chosen {
         zephyr,code-partition = &code_partition;

@@ -4,7 +4,7 @@
 if BOARD_NAMELESS_ERGO
 
 config ZMK_KEYBOARD_NAME
-    default "Nameless Ergo"
+    default "nameless ergo"
 
 if USB
 
