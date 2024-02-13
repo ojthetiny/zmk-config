@@ -17,7 +17,8 @@
             *label = "Caps lock LED";
         *};
     *};
-*};
+};
+*/
 
 / {
     model = "nameless_ergo";
@@ -123,10 +124,6 @@
 };
 
 &flash0 {
-    /*
-     * For more information, see:
-     * http://docs.zephyrproject.org/latest/devices/dts/flash_partitions.html
-     */
     partitions {
         compatible = "fixed-partitions";
         #address-cells = <1>;
