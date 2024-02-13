@@ -13,6 +13,6 @@
 #
 ---
 include:
-  - board: uwu30
-  - board: uwu30
+  - board: nameless_ergo
+  - board: nameless_ergo
     shield: settings_reset

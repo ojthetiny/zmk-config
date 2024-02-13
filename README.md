@@ -1,4 +1,4 @@
-# uwu30 ZMK Config
+# Nameless Ergo ZMK Config
 
 ## Instructions
 
