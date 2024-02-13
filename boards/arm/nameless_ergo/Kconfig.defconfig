@@ -1,10 +1,10 @@
 # Copyright (c) 2023 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if BOARD_UWU30
+if BOARD_NAMELESS_ERGO
 
 config ZMK_KEYBOARD_NAME
-    default "uwu30"
+    default "Nameless Ergo"
 
 if USB
 
@@ -25,4 +25,4 @@ config I2C
 config MAX17048
     default y
 
-endif # BOARD_UWU30
+endif # BOARD_NAMELESS_ERGO
