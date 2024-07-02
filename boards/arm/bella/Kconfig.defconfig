@@ -1,0 +1,19 @@
+# Copyright (c) 2022 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if BOARD_BELLA_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Bella"
+    
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if BOARD_BELLA_LEFT || BOARD_BELLA_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

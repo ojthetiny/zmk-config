@@ -1,0 +1,13 @@
+file_format: "1"
+id: bella
+name: bella
+type: board
+arch: arm
+outputs:
+  - usb
+  - ble
+features:
+  - keys
+siblings:
+  - bella_left
+  - bella_right
