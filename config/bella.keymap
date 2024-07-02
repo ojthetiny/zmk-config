@@ -14,27 +14,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    macros {
-        tog_bt0: tog_bt0 {
-            label = "tog_bt0";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = <&out OUT_BLE &bt BT_SEL 0>;
-        };
-        tog_bt1: tog_bt1 {
-            label = "tog_bt1";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = <&out OUT_BLE &bt BT_SEL 1>;
-        };
-    };
-};
-
-/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -50,10 +29,10 @@
 
         nav_layer {
             bindings = <
-    &trans     &trans    &trans    &trans     &trans    &trans   &kp F9               &tog_bt0 &trans   &trans  &trans  &trans  &trans  &trans
+    &trans     &trans    &trans    &trans     &trans    &trans   &kp F9               &trans   &trans   &trans  &trans  &trans  &trans  &trans
     &trans     &trans    &kp UP    &trans     &trans    &trans   &kp F10              &trans   &trans   &trans  &trans  &trans  &trans  &trans
     &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &trans   &kp F11              &trans   &trans   &trans  &trans  &trans  &trans  &trans                   
-    &trans     &trans    &trans    &trans     &trans    &trans   &kp F12              &tog_bt1 &trans   &trans  &trans  &trans  &trans  &trans  
+    &trans     &trans    &trans    &trans     &trans    &trans   &kp F12              &trans   &trans   &trans  &trans  &trans  &trans  &trans  
                                    &trans     &trans    &trans   &trans               &trans   &trans   &trans  &trans
             >;
         };
