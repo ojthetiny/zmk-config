@@ -4,14 +4,17 @@
 if BOARD_BELLA_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Bella"
+    default "bella"
     
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-endif
+endif # BOARD_BELLA_LEFT
 
 if BOARD_BELLA_LEFT || BOARD_BELLA_RIGHT
+
+config BOARD
+    default "bella"
 
 config ZMK_SPLIT
     default y

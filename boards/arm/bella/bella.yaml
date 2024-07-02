@@ -1,6 +1,6 @@
 identifier: bella
 name: bella
-type: mcu
+type: keyboard
 arch: arm
 toolchain:
   - zephyr
