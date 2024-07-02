@@ -1,6 +1,6 @@
 identifier: bella
 name: bella
-type: keyboard
+type: board
 arch: arm
 toolchain:
   - zephyr
