@@ -13,4 +13,5 @@
 #
 ---
 include:
-  - board: bella
+  - board: bella_left
+  - board: bella_right
