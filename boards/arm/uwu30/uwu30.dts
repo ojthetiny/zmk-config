@@ -6,9 +6,12 @@
 
 /dts-v1/;
 #include <nordic/nrf52840_qiaa.dtsi>
+
 #include <dt-bindings/zmk/matrix_transform.h>
 
 #include "uwu30-pinctrl.dtsi"
+#include "uwu30-layouts.dtsi"
+
 
 / {
     model = "uwu30";
@@ -20,7 +23,6 @@
         zephyr,flash = &flash0;
         zmk,battery = &fuelgauge;
         zmk,kscan = &kscan0;
-        zmk,matrix-transform = &default_transform;
     };
 
     default_transform: keymap_transform_0 {
