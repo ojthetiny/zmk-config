@@ -1,0 +1,10 @@
+file_format: "1"
+id: lgbtkl
+name: LGBTKL
+type: board
+arch: arm
+features:
+  - keys
+outputs:
+  - usb
+url: 

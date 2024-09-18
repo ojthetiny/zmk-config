@@ -1,5 +1,5 @@
-identifier: Altar
-name: Altar
+identifier: lgbtkl
+name: lgbtkl
 type: mcu
 arch: arm
 toolchain:
@@ -8,7 +8,5 @@ toolchain:
 supported:
   - adc
   - usb_device
-  - ble
-  - ieee802154
   - pwm
   - watchdog

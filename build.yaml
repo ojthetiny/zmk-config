@@ -13,7 +13,8 @@
 #
 ---
 include:
-  - board: isometria75_rev2
-  - board: altar
-  - board: wlpad
-  - board: osprey_a
+  - board: lgbtkl
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: lgbtkl
+
