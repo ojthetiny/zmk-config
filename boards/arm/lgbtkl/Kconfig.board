@@ -4,5 +4,5 @@
 # SPDX-License-Identifier: MIT
 
 config BOARD_LGBTKL
-    bool "lgbtkl"
+    bool "LGBTKL"
     depends on SOC_STM32F072XB
