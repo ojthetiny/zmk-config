@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
-    model = "LGBTKL";
+    model = "lgbtkl";
     compatible = "lgbtkl", "st,stm32f072";
 
     chosen {

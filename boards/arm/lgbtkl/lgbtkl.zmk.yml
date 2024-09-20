@@ -1,6 +1,6 @@
 file_format: "1"
 id: lgbtkl
-name: LGBTKL
+name: lgbtkl
 type: board
 arch: arm
 features:
