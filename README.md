@@ -6,6 +6,7 @@
 
 1. You will need to [sign up for a GitHub account](https://github.com/signup), and [fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) so you can edit it.
 2. Navigate to the **Actions** tab and click the "I understand my workflows, go ahead and run them" button to enable builds.
+
    ![Actions tab with "I understand my workflows" button](https://i.imgur.com/B7cTAE6.png)
 3. Edit [config/uwu30.conf](config/uwu30.conf) to add/enable/disable features. Edit [config/uwu30.keymap](config/uwu30.keymap) to change the keymap.
 4. After committing your changes, your firmware will begin compiling. Assuming there are no typos or other problems, it will eventually be [downloadable from the Actions tab](https://zmk.dev/docs/user-setup#installing-the-firmware).
