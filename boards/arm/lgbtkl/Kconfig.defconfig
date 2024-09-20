@@ -9,7 +9,7 @@ config BOARD
     default "lgbtkl"
 
 config ZMK_KEYBOARD_NAME
-    default "LGBTKL"
+    default "lgbtkl"
 
 config ZMK_USB
     default y
