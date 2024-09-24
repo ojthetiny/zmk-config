@@ -20,7 +20,6 @@
     chosen {
         zephyr,sram = &sram0;
         zephyr,flash = &flash0;
-        zephyr,console = &cdc_acm_uart;
         zmk,kscan = &kscan;
     };
 
