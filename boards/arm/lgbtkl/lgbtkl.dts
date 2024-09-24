@@ -21,7 +21,6 @@
         zephyr,sram = &sram0;
         zephyr,flash = &flash0;
         zmk,kscan = &kscan;
-        zephyr,console = &cdc_acm_uart;
     };
 
     kscan: kscan {
@@ -69,11 +68,6 @@ zephyr_udc0: &usb {
     pinctrl-names = "default";
 
     num-bidir-endpoints = <6>;
-
-    cdc_acm_uart: cdc_acm_uart {
-        compatible = "zephyr,cdc-acm-uart";
-        label = "CDC_ACM_0";
-    };
 };
 
 &clk_hsi {
