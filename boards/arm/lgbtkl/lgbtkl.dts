@@ -16,7 +16,6 @@
     compatible = "lgbtkl", "st,stm32f072";
 
     chosen {
-        zephyr,code-partition = &code_partition;
         zephyr,sram = &sram0;
         zephyr,flash = &flash0;
         zmk,kscan = &kscan;
