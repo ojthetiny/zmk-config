@@ -21,6 +21,7 @@
         zephyr,sram = &sram0;
         zephyr,flash = &flash0;
         zmk,kscan = &kscan;
+        zephyr,console = &cdc_acm_uart;
     };
 
     kscan: kscan {
