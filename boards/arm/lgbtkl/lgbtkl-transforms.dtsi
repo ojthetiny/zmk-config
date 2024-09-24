@@ -2,7 +2,7 @@
 
 
 / {
-transform: transform {
+default_transform: transform {
         compatible = "zmk,matrix-transform";
         rows = <5>;
         columns = <19>;

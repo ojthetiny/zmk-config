@@ -1,7 +1,11 @@
 #include <physical_layouts.dtsi>
 
 / {
-   layout: layout {
+   chosen {
+   zmk,physical-layout = &default_layout
+   };
+
+   default_layout: layout {
       compatible = "zmk,physical-layout";
       display-name = "FRLTKL";
       transform = <&default_transform>;
