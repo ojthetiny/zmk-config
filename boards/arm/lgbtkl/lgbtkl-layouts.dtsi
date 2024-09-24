@@ -1,9 +1,10 @@
 #include <physical_layouts.dtsi>
 
 / {
-    layout: layout {
-        compatible = "zmk,physical-layout";
-        display-name = "FRLTKL";
+   layout: layout {
+      compatible = "zmk,physical-layout";
+      display-name = "FRLTKL";
+      transform = <&default_transform>;
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0>
             , <&key_physical_attrs 100 100  125    0       0     0     0>
